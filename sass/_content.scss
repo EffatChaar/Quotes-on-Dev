@@ -31,3 +31,155 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+
+
+
+
+.home {
+	background-color: $background-color;
+	color: $text-color;
+	display: flex;
+	margin-left: 1rem;
+	font-family: $font-family;
+	.site-header {
+		margin-top: 3rem;
+	}
+	.logo {
+		width: 300px;
+	}
+	.site-content {
+		margin-top: 2rem;
+	}
+	.entry-content {
+		font-weight: lighter;
+		font-size: 1.25rem;
+	}
+	.entry-meta {
+		font-size: 1rem;
+		display: flex;
+		margin-top: 0;
+		h2 {
+			font-weight: lighter;
+			font-size: 1.25rem;
+		}
+		.source {
+			font-style: italic;
+			padding-top: 1rem;
+			a {
+				font-size : 1.25rem;
+				text-decoration: none;
+				color: #0c0;
+			}
+		}
+	}
+	button {
+		margin-bottom: 3rem;
+		margin-top: 0;
+		border: 2px solid #090;
+		background: #222;
+		box-shadow: none;
+		color: #090;
+		font-size: 1rem;
+		line-height: 1;
+		padding: 1rem;
+		border-radius: 3px;
+		text-shadow: none;
+		font-family: $font-family;
+	}
+	.footer-navigation ul {
+		display: flex;
+		width: 20rem;
+		margin-left: 0;
+		padding-left: 0;
+		flex-direction: row;
+		list-style: none;
+		justify-content: space-between;
+		a {
+			text-decoration: none;
+			color: #0c0;
+		}
+	}
+	.page-item-107 {
+		border-right : 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.page-item-113 {
+		border-right: 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.site-info a {
+		text-decoration: none;
+		color: #0c0;
+	}
+}
+
+
+
+
+
+
+.page-template-default {
+	background-color: $background-color;
+	color: $text-color;
+	display: flex;
+	margin-left: 1rem;
+	font-family: $font-family;
+	.entry-content {
+		font-weight: lighter;
+		font-size: 1rem;
+		a {
+			text-decoration: none;
+			color: #0c0;
+		}
+	}
+	.footer-navigation ul {
+		display: flex;
+		margin-top: 4rem;
+		width: 20rem;
+		margin-left: 0;
+		padding-left: 0;
+		flex-direction: row;
+		list-style: none;
+		justify-content: space-between;
+		a {
+			text-decoration: none;
+			color: #0c0;
+		}
+	}
+	
+	.page-item-107 {
+		border-right : 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.page-item-113 {
+		border-right: 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.site-info a {
+		text-decoration: none;
+		color: #0c0;
+	}
+}
+
+
+
+.page-id-113 {
+	display: flex;
+	li a {
+		text-decoration: none;
+		color: #0c0;
+		font-weight: lighter;
+	}
+	ul {
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-left: 0;
+		padding-left: 0;
+		line-height: 2.5rem;
+		margin-right: 3rem;
+	}
+}
