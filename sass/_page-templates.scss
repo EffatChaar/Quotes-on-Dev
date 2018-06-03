@@ -5,3 +5,1037 @@
 /* All Archives Page */
 
 /* Submit a Quote Page */
+.home {
+	background-color: $background-color;
+	color: $text-color;
+	display: flex;
+	margin-left: 1rem;
+	font-family: $font-family;
+	.site-header {
+		margin-top: 3rem;
+		@include desktop {
+			margin-top: 4rem;
+			margin-bottom: 5rem;
+		}
+	}
+	.site-branding {
+		@include desktop {
+			margin-right: 7rem;
+			margin-left: 7rem;
+		}
+	}
+	.logo img {
+		width: 20rem;
+		@include tablet {
+			width: 30rem;
+		}
+		@include desktop {
+			width: 45rem;
+		}
+	}
+	.site-content {
+		margin-top: 2rem;
+		@include desktop {
+			margin-right: 10rem;
+			margin-bottom: 3rem;
+			margin-left: 10rem;
+			position: relative;
+		}
+	}
+	.site-content:before {
+		@include desktop {
+			content: "\f10d";
+			left: -175px;
+			font-family: FontAwesome;
+			position: absolute;
+			top: -20px;
+			left: -10rem;
+			font-size: 8rem;
+			color: #0c0;
+		}
+	}
+	.site-content:after {
+		@include desktop {
+			content: "\f10e";
+			font-family: FontAwesome;
+			position: absolute;
+			font-size: 8rem;
+			color: #0c0;
+			top: -20px;
+			right: -8rem;
+		}
+	}
+	.entry-content {
+		font-weight: lighter;
+		font-size: 1.25rem;
+		@include desktop {
+			font-size: 2.8rem;
+			width: 100%;
+		}
+	}
+	.entry-meta {
+		font-size: 1rem;
+		display: flex;
+		flex-direction: row;
+		margin-top: 0;
+		font-weight: lighter;
+		width: 100%;
+		h2 {
+			font-weight: lighter;
+			font-size: 1.25rem;
+		}
+		.source {
+			padding-top: 1rem;
+			font-style: italic;
+		}
+		.source a {
+			font-size : 1.25rem;
+			text-decoration: none;
+			color: #0c0;
+			font-style: italic;
+			padding-top: 1.5rem;
+		}
+		a {
+			font-size : 1.25rem;
+			text-decoration: none;
+			color: #0c0;
+			font-style: italic;
+			padding-top: 1.5rem;
+		}
+	}
+	#new-quote-button {
+		margin-bottom: 3rem;
+		margin-top: 0;
+		border: 2px solid #0c0;
+		background: transparent;
+		box-shadow: none;
+		color: #0c0;
+		font-size: 1rem;
+		line-height: 1;
+		padding: 1rem;
+		border-radius: 3px;
+		text-shadow: none;
+		font-family: $font-family;
+		outline: none;
+		@include tablet {
+			font-size: 1.2rem;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			width: 14rem;
+		}
+		@include desktop {
+			margin-left: 14rem;
+			padding-left: 2rem;
+			padding-right: 2rem;
+			width: 15rem;
+			margin-bottom: 3rem;
+		}
+	}
+	.footer-navigation ul {
+		display: flex;
+		width: 20rem;
+		margin-left: 0;
+		padding-left: 0;
+		flex-direction: row;
+		list-style: none;
+		justify-content: space-between;
+		a {
+			text-decoration: none;
+			color: #0c0;
+		}
+	}
+	.page-item-107 {
+		border-right : 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.page-item-113 {
+		border-right: 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.page-item-111 {
+		@include tablet {
+			border-right : 1px solid #ffffff;
+			padding-right: 1.5rem;
+		}
+	}
+	.site-info a {
+		text-decoration: none;
+		color: #0c0;
+	}
+	.site-info {
+		font-weight: lighter;
+		@include tablet {
+			display: flex;
+			justify-content: space-around;
+		}
+		@include desktop {
+			float: right;
+		}
+		p {
+			@include tablet {
+				margin-top: 0;
+				margin-right: 1rem;
+				padding-right: 1rem;
+			}
+			@include desktop {
+				margin-left: 1rem;
+			}
+		}
+	}
+}
+
+//===================== page-template-default============\\
+
+.page-template-default {
+	background-color: $background-color;
+	color: $text-color;
+	display: flex;
+	margin-left: 1rem;
+	font-family: $font-family;
+
+	.site-header {
+		margin-top: 3rem;
+		@include desktop {
+			margin-top: 4rem;
+			margin-bottom: 5rem;
+		}
+	}
+	.site-branding {
+		@include desktop {
+			margin-right: 7rem;
+			margin-left: 7rem;
+		}
+	}
+	.site-content {
+		margin-top: 2rem;
+		@include desktop {
+			position: relative;
+			width: 70%;
+			left: 10rem;
+		}
+	}
+	.site-content:before {
+		content: "\f10d";
+		left: -175px;
+		font-family: FontAwesome;
+		position: absolute;
+		top: -20px;
+		left: -10rem;
+		font-size: 8rem;
+		color: #0c0;
+	}
+	.site-content:after {
+		@include desktop {
+			content: "\f10e";
+			font-family: FontAwesome;
+			position: absolute;
+			font-size: 8rem;
+			color: #0c0;
+			top: -20px;
+			right: -8rem;
+		}
+	}
+	.logo img {
+		width: 20rem;
+		@include tablet {
+			width: 30rem;
+		}
+		@include desktop {
+			width: 45rem;
+		}
+	}
+	.footer-navigation ul {
+		display: flex;
+		width: 20rem;
+		margin-left: 0;
+		padding-left: 0;
+		flex-direction: row;
+		list-style: none;
+		justify-content: space-between;
+		a {
+			text-decoration: none;
+			color: #0c0;
+		}
+		.page-item-111 {
+			@include tablet {
+				border-right: 1px solid #ffffff;
+				padding-right: 1.5rem;
+			}
+		}
+	}
+	.page-item-107 {
+		border-right : 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.page-item-113 {
+		border-right: 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.site-info a {
+		text-decoration: none;
+		color: #0c0;
+	}
+	.site-info {
+		font-weight: lighter;
+		@include tablet {
+		display: flex;
+		justify-content: space-around;
+		}
+		p {
+			@include tablet {
+				margin-top: auto;
+				margin-right: 1rem;
+				padding-right: 1.5rem;
+			}
+		}
+	}
+}
+
+.page-id-107 {
+	.site-header {
+		@include desktop {
+			margin-top: 4rem;
+		}
+	}
+	.entry-content {
+		font-weight: lighter;
+		font-size: 1rem;
+		a {
+			text-decoration: none;
+			color: #0c0;
+		}
+		@include desktop {
+			font-size: 1.1rem;
+		}
+	}
+	.entry-title {
+		@include desktop {
+			width: 62%;
+			margin-bottom: 1.5rem;
+		}
+	}
+	.footer-navigation ul {
+		display: flex;
+		margin-top: 4rem;
+		width: 20rem;
+		margin-left: 0;
+		padding-left: 0;
+		flex-direction: row;
+		list-style: none;
+		justify-content: space-between;
+		a {
+			text-decoration: none;
+			color: #0c0;
+		}
+	}
+	.page-item-107 {
+		border-right : 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.page-item-113 {
+		border-right: 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.site-info a {
+		text-decoration: none;
+		color: #0c0;
+	}
+	.site-info {
+		font-weight: lighter;
+		@include tablet {
+			display: flex;
+			justify-content: space-around;
+		}
+		@include desktop {
+			float: right;
+		}
+		p {
+			@include tablet {
+				margin-top: 0;
+				margin-right: 1rem;
+				padding-right: 1rem;
+			}
+			@include desktop {
+				margin-left: 1rem;
+				margin-top: auto;
+			}
+		}
+	}
+}
+
+
+.page-id-113 {
+	.browse-archives {
+		@include desktop {
+			li a {
+				font-size: 1.4rem;
+			}
+		}
+	}
+	li a {
+		text-decoration: none;
+		color: #0c0;
+		font-weight: lighter;
+	}
+	ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-left: 0;
+		padding-left: 0;
+		line-height: 2.5rem;
+		margin-right: 1rem;
+	}
+	.clearfix li {
+		margin: 4px;
+	}
+	.wp-tag-cloud {
+		@include tablet {
+			margin-bottom: 4rem;
+			ul {
+			margin-right: 1rem;
+			font-size: 1.25rem;
+			}
+			.tag-cloud-link {
+				font-size: 1.25rem;
+			}
+		}
+	}
+	a .tag-cloud-link {
+		@include tablet {
+			font-size: 1.25rem;
+		}
+	}
+	.clearfix li {
+		@include tablet {
+			font-size: 1.25rem;
+		}
+	}
+	.site-info p {
+		@include tablet {
+			margin-bottom: 2rem;
+		}
+	}
+	.site-info {
+		font-weight: lighter;
+		@include tablet {
+			display: flex;
+			justify-content: space-around;
+		}
+		@include desktop {
+			float: right;
+		}
+		p {
+			@include tablet {
+				margin-top: 0;
+				margin-right: 1rem;
+				padding-right: 1rem;
+			}
+			@include desktop {
+				margin-left: 1rem;
+				margin-top: auto;
+			}
+		}
+	}
+}
+
+.page-id-111 {
+	p {
+		font-weight: lighter;
+	}
+	a {
+		text-decoration: none;
+		color: #0c0;
+	}
+	.logo {
+		@include desktop {
+			margin-left: 2rem;
+		}
+	}
+	.quote-submission {
+		@include desktop {
+			margin-bottom: 1.5rem;
+		}
+	}
+	.entry-title {
+		font-weight: lighter;
+	}
+	.quote-author {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 1rem;
+		color: white;
+	}
+	.quote-content {
+		@extend .quote-author ;
+		padding-right: 2rem;
+	}
+	.quote-source {
+		@extend .quote-author ;
+	}
+	.quote-source-url {
+		@extend .quote-author ;
+		margin-bottom: 1.5rem;
+	}
+	.submit-button {
+		margin-bottom: 3rem;
+		margin-top: 0;
+		border: 2px solid #0c0;
+		background: transparent;
+		box-shadow: none;
+		color: #0c0;
+		font-size: 1rem;
+		line-height: 1;
+		padding: 1rem;
+		border-radius: 3px;
+		text-shadow: none;
+		font-family: $font-family;
+		@include tablet {
+			font-size: 1.2rem;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			width: 14rem;
+		}
+		@include desktop {
+			padding-left: 2rem;
+			padding-right: 2rem;
+			width: 15rem;
+			margin-bottom: 3rem;
+		}
+	}
+	.text-title {
+		margin-bottom: 1rem;
+		font-weight: lighter;
+	}
+	.input-field {
+		background: #222222;
+		border: 2px solid #0c0;
+		color: #ffffff;
+		font-weight: lighter;
+		font-family: $font-family;
+		outline: none;
+		&:focus {
+			border-color: #ffffff;
+		}
+	}
+	#quote-author, #quote-source, #quote-source-url {
+		width: 60%;
+		color: white;
+	}
+	textarea {
+		width: 100%;
+	}
+	.site-info {
+		font-weight: lighter;
+		@include tablet {
+			display: flex;
+			justify-content: space-around;
+		}
+		@include desktop {
+			float: right;
+		}
+		p {
+			@include tablet {
+				margin-top: 0;
+				margin-right: 1rem;
+				padding-right: 1rem;
+			}
+			@include desktop {
+				margin-left: 1rem;
+				margin-top: auto;
+			}
+		}
+	}
+
+}
+
+
+//===================post-template-dafault=====================\\
+
+.post-template-default {
+	background-color: $background-color;
+	color: $text-color;
+	display: flex;
+	margin-left: 1rem;
+	font-family: $font-family;
+	
+	.site-header {
+		margin-top: 3rem;
+		@include desktop {
+			margin-top: 4rem;
+			margin-bottom: 5rem;
+		}
+	}
+	.site-branding {
+		@include desktop {
+			margin-right: 7rem;
+			margin-left: 8rem;
+		}
+	}
+	.logo img {
+		width: 20rem;
+		@include tablet {
+			width: 30rem;
+		}
+		@include desktop {
+			width: 45rem;
+		}
+	}
+	.site-content {
+		margin-top: 2rem;
+		@include desktop {
+			position: relative;
+			width: 70%;
+
+		}
+	}
+	.site-content:before {
+		content: "\f10d";
+		left: -175px;
+		font-family: FontAwesome;
+		position: absolute;
+		top: -20px;
+		left: -10rem;
+		font-size: 8rem;
+		color: #0c0;
+	}
+	.site-content:after {
+		@include desktop {
+			content: "\f10e";
+			font-family: FontAwesome;
+			position: absolute;
+			font-size: 8rem;
+			color: #0c0;
+			top: -20px;
+			right: -8rem;
+		}
+	}
+	.site-main {
+		@include desktop {
+			width: 90%;
+		}
+	}
+	.entry-content {
+		font-weight: lighter;
+		font-size: 1.25rem;
+		@include desktop {
+			font-size: 2.8rem
+		}
+	}
+	.entry-meta {
+		font-size: 1rem;
+		margin-top: 0;
+		font-weight: lighter;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		h2 {
+			font-weight: lighter;
+			font-size: 1.25rem;
+		}
+		.source {
+			padding-top: 1rem;
+		}
+		.source a {
+			font-style: italic;
+			padding-top: 1rem;
+			font-size : 1.25rem;
+			text-decoration: none;
+			color: #0c0;
+			padding-top: 1.5rem;
+		}
+		a {
+			font-style: italic;
+			padding-top: 1rem;
+			font-size : 1.25rem;
+			text-decoration: none;
+			color: #0c0;
+			padding-top: 1.5rem;
+		}
+	}
+	button {
+		margin-bottom: 3rem;
+		margin-top: 0;
+		border: 2px solid #0c0;
+		background: transparent;
+		box-shadow: none;
+		color: #0c0;
+		font-size: 1rem;
+		line-height: 1;
+		padding: 1rem;
+		border-radius: 3px;
+		text-shadow: none;
+		font-family: $font-family;
+		@include tablet {
+			font-size: 1.2rem;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			width: 14rem;
+		}
+		@include desktop {
+			padding-left: 2rem;
+			padding-right: 2rem;
+			width: 15rem;
+			margin-bottom: 3rem;
+		}
+	}
+	.footer-navigation ul {
+		display: flex;
+		width: 20rem;
+		margin-left: 0;
+		padding-left: 0;
+		flex-direction: row;
+		list-style: none;
+		justify-content: space-between;
+		.source a {
+			text-decoration: none;
+			color: #0c0;
+		}
+	}
+	.page-item-107 {
+		border-right : 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.page-item-113 {
+		border-right: 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.site-info a {
+		text-decoration: none;
+		color: #0c0;
+	}
+	.site-info {
+		font-weight: lighter;
+		@include tablet {
+			display: flex;
+			justify-content: space-around;
+		}
+		@include desktop {
+			float: right;
+		}
+		p {
+			@include tablet {
+				margin-top: 0;
+				margin-right: 1rem;
+				padding-right: 1rem;
+			}
+			@include desktop {
+				margin-left: 1rem;
+				margin-top: auto;
+			}
+		}
+	}
+}
+.single-post {
+	@include desktop {
+		.site-content {
+			position: relative;
+		}
+		.site-main {
+			margin-left: 9rem;
+		}
+		.site-content:before {
+			content: "\f10d";
+			left: -175px;
+			font-family: FontAwesome;
+			position: absolute;
+			top: -20px;
+			left: -1rem;
+			font-size: 8rem;
+			color: #0c0;
+		}
+		.site-content:after {
+			content: "\f10e";
+			font-family: FontAwesome;
+			position: absolute;
+			font-size: 8rem;
+			color: #0c0;
+			top: -20px;
+			right: -18rem;
+		}
+	}
+}
+
+//================ archive =================\\
+
+.archive {
+	background-color: $background-color;
+	color: $text-color;
+	display: flex;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	font-family: $font-family;
+	
+	.site-header {
+		margin-top: 3rem;
+		@include desktop {
+			margin-top: 4rem;
+			margin-bottom: 5rem;
+		}
+	}
+	.site-content {
+		margin-top: 2rem;
+		@include desktop {
+			width: 62%;
+			margin: auto;
+			position: relative;
+		}
+	}
+	.site-content:before {
+		content: "\f10d";
+		left: -175px;
+		font-family: FontAwesome;
+		position: absolute;
+		top: -20px;
+		left: -10rem;
+		font-size: 8rem;
+		color: #0c0;
+	}
+	.site-content:after {
+		@include desktop {
+			content: "\f10e";
+			font-family: FontAwesome;
+			position: absolute;
+			font-size: 8rem;
+			color: #0c0;
+			top: -20px;
+			right: -8rem;
+		}
+	}
+	.site-branding {
+		@include desktop {
+			margin-right: 7rem;
+			margin-left: 7rem;
+		}
+	}
+	.logo img {
+		width: 20rem;
+		@include tablet {
+			width: 30rem;
+		}
+		@include desktop {
+			width: 45rem;
+		}
+	}
+	.page-title {
+		font-size: 2.1rem;
+		border-bottom: 1px dashed #ffffff;
+		padding-bottom: 2rem;
+	}
+	.entry-content, .type-post, h2 {
+		font-size: 1.3rem;
+		font-weight: lighter;
+	}
+	.entry-content {
+		@include desktop {
+			font-size: 2.1rem;
+		}
+	}
+	h2 {
+		border-bottom: 1px dashed #ffffff;
+		padding-bottom: 2rem;
+	}
+	.post-41 {
+		margin-bottom: 4rem;
+	}
+	.number-pagination {
+		display: flex;
+		justify-content: space-between;
+		width: 11rem;
+		margin-bottom: 4rem;
+		.page-numbers {
+			text-decoration: none;
+			color: #0c0;
+		}
+		.current {
+			text-decoration: none;
+			color: #ffffff;
+		}
+	}
+	.footer-navigation ul {
+		display: flex;
+		font-weight: lighter;
+		width: 20rem;
+		margin-left: 0;
+		padding-left: 0;
+		flex-direction: row;
+		list-style: none;
+		justify-content: space-between;
+		.page_item a {
+			text-decoration: none;
+			color: #0c0;
+		}
+		p {
+			font-weight: lighter;
+		}
+		a {
+			text-decoration: none;
+			color: #0c0;
+		}
+	}
+	.site-info {
+		margin-bottom: 5rem;
+		p {
+			font-weight: lighter;
+		}
+		a {
+			text-decoration: none;
+			color: #0c0;
+		}
+	}
+	.page-item-107 {
+		border-right : 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.page-item-113 {
+		border-right: 1px solid #ffffff;
+		padding-right: 1.5rem;
+	}
+	.site-info {
+		font-weight: lighter;
+		@include tablet {
+			display: flex;
+			justify-content: space-around;
+		}
+		@include desktop {
+			float: right;
+		}
+		p {
+			@include tablet {
+				margin-top: 0;
+				margin-right: 1rem;
+				padding-right: 1rem;
+			}
+			@include desktop {
+				margin-left: 1rem;
+				margin-top: auto;
+			}
+		}
+	}
+}
+
+//================ 404 =============\\
+
+.error404 {
+    @extend .home ;
+    .page-content p {
+        font-weight: lighter;
+    }
+    .search-form {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .clearfix {
+        border: 0;
+        color: #ffffff;
+    }
+    .search-field {
+        background-color: #222222;
+        border: 2px solid #0c0;
+        width: 250px; 
+        margin-right: 5px;
+        font-family: $font-family;
+        font-size: 1.25rem;
+        font-weight: lighter;
+        margin-bottom: 6rem;
+        outline: none;
+        color: #ffffff;
+        &:focus {
+            border-color: #ffffff;
+            color: #ffffff;
+        }
+        @include tablet {
+            padding: 0 4px;
+            width: 210px;
+            margin-bottom: 6rem;
+        }
+        @include desktop {
+            padding: 7px 5px;
+            margin-bottom: 0;
+        }
+    }
+    .search-submit {
+        border: 0;
+        padding: 0;
+        background-color: #222222;
+        color: #0c0;
+        box-shadow: none;
+        text-shadow: none;
+        .fa-search {
+            font-size: 1.3rem;
+        }
+    }
+    .site-info {
+        @include tablet {
+            justify-content: flex-start;
+            p {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+}
+
+//====================== search ===============\\
+.search-results {
+    @extend .home ;
+    margin-right: 1rem;
+    .page-title {
+        border-bottom: 1px dashed #ffffff;
+        padding-bottom: 1rem;
+    }
+    .entry-title a {
+        color: #0c0;
+        text-decoration: none;
+    }
+    .content-area {
+        margin-bottom: 2rem;
+        font-weight: lighter;
+        a {
+            color: #0c0;
+            text-decoration: none;
+            font-weight: lighter;
+        }
+    }
+    .site-footer {
+        margin-bottom: 3rem;
+    }
+    .site-info ul {
+        margin-bottom: 0.5rem;
+    }
+    @include tablet {
+        .number-pagination {
+            margin-bottom: 4rem;
+            margin-top: 2rem;
+        }
+        .site-info {
+            justify-content: flex-start;
+            p {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+.search-no-results {
+    @extend .home ;
+    .page-content {
+        @extend .error404 ;
+    }
+    .no-results {
+        border-top: 1px dashed #ffffff;
+        @include desktop {
+            margin-bottom: 7rem;
+        }  
+    }
+    @include tablet {
+        .site-info {
+            justify-content: flex-start;
+            p {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+//=========== end of my css ============\\
