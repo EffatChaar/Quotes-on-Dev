@@ -60,6 +60,10 @@
       $('#quote-submission-form').slideUp('slowly');
       $('.quote-submission-wrapper').append('Success! Thank You For Submitting!');
     })
+    .fail(function(err){
+      $('.entry-header').append('<p class="warning">Something went wrong!' + JSON.stringify(err) + '</p>')
+
+    });
   })
 
 })(jQuery);
